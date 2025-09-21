@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FreezApp</title>
+    <link rel="icon" type="image/png" href="./assets/img/freezapp.png" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <section id="hero" class="hero">
+      <div class="container">
+        <header>
+          <div class="logo">
+            <!-- <img src="./assets/img/snowflake.png" alt="" /> -->
+            <p>Freezapp</p>
+          </div>
+          <nav class="nav">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#assigments">Assigments</a></li>
+              <li><a href="#project">Project</a></li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+      <canvas id="canvas"></canvas>
+      <img class="mobile-logo" src="./assets/img/freezapp.png" alt="" />
+      <div class="container skip-link-container">
+        <a class="skip-link" href="#about">Explore More</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>About Freezapp</h2>
+        <div class="p-content">
+          <p class="section-p">
+            FreezApp is a project developed by Computer Science students from
+            FCT NOVA (Faculdade de Ciências e Tecnologia da Universidade Nova de
+            Lisboa), with the aim of exploring practical applications of
+            human-computer interaction and intuitive interface design.
+          </p>
+          <p class="section-p">
+            Our goal is not only to design an app, but also to reflect on how
+            thoughtful interfaces can change everyday habits and improve user
+            experience.
+          </p>
+
+          <p class="section-p">
+            Check out our work and follow along with our first prototype—we hope
+            FreezApp inspires you to see technology as a way to make life
+            simpler and smarter!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="assigments">
+      <div class="container">
+        <h2>Assignments</h2>
+        <div class="assigments-container">
+          <a
+            target="_blank"
+            href="assets/assigments/assignment.pdf"
+            class="assigment"
+          >
+            <h3>Good and bad design</h3>
+            <h4>Piotr Ratajczak</h4>
+          </a>
+
+          <a
+            target="_blank"
+            href="assets/assigments/assignment.pdf"
+            class="assigment"
+          >
+            <h3>Good and bad design</h3>
+            <h4>Alicja Kowalska</h4>
+          </a>
+
+          <a
+            target="_blank"
+            href="assets/assigments/assignment.pdf"
+            class="assigment"
+          >
+            <h3>Good and bad design</h3>
+            <h4>Paweł Spychała</h4>
+          </a>
+
+          <a
+            target="_blank"
+            href="assets/assigments/assignment.pdf"
+            class="assigment"
+          >
+            <h3>Good and bad design</h3>
+            <h4>Dawid Józwik</h4>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="project">
+      <div class="container">
+        <h2>Project</h2>
+        <div class="assigments-container">
+          <div class="assigment" onclick="openPopup('stage-1')">
+            <h3>
+              Stage 1:
+              <br />
+              Project proposal
+            </h3>
+            <h4>22 September 2025</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Freezapp.</p>
+      </div>
+    </footer>
+
+    <dialog id="stage-1" class="popup">
+      <div class="popup-content">
+        <button
+          onclick="closePopup('stage-1')"
+          class="close-popup"
+          id="close-stage-1"
+        >
+          &times;
+        </button>
+        <h3>Stage 1: Project Proposal</h3>
+
+        <h4><b>Description:</b></h4>
+        <p>
+          In this initial stage, we focused on identifying a real-world problem
+          related to food waste and brainstorming potential solutions. After
+          thorough research and discussions, we proposed the idea of FreezApp,
+          an application designed to help users manage their frozen food
+          inventory effectively.
+        </p>
+        <p>
+          The proposal included defining the app's core features, target
+          audience, and the overall user experience we aimed to create. We also
+          outlined our project timeline and milestones to ensure a structured
+          development process.
+        </p>
+
+        <h4><b>Date: 22 September 2025</b></h4>
+
+        <h4><b>Authors:</b></h4>
+        <ul>
+          <li>Piotr Ratajczak</li>
+          <li>Alicja Kowalska</li>
+          <li>Paweł Spychała</li>
+          <li>Dawid Józwik</li>
+        </ul>
+
+        <a target="_blank" href="/assets/reports/FreezApp-project_proposal.pdf"
+          ><b>Click to see a report</b></a
+        >
+      </div>
+    </dialog>
+
+    <script type="module" src="./assets/scripts/logo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="./assets/scripts/script.js"></script>
+  </body>
+</html>
