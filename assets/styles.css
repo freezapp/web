@@ -263,7 +263,8 @@ footer {
   width: 90%;
   background-color: var(--color-text);
   margin-inline: auto;
-  margin-top: max(10vh, 2rem);
+  max-height: 90vh;
+  margin-block: auto;
 }
 
 .popup::backdrop {
